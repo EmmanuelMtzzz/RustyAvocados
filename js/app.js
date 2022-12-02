@@ -10,4 +10,5 @@ es la ruta de nuestro repositorio*/
 if(url.includes('localhost')){
 ubicacionSw='/sw.js';
 }
-navigator.serviceWorker.register(ubicacionSw);}
+navigator.serviceWorker.register(ubicacionSw);
+}
