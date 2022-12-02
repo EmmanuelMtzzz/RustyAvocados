@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RustyAvocados | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="manifest" href="manifest.json"/>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <!--<img src="img/logo.png" alt="">-->
+                            <h4 style="color:#ffffff";>RustyAvocados</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./categories.html">Categorias<span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./categories.html">Categorias</a></li>
+                                        <li><a href="./Peliculas-Info.html">Peli Info</a></li>
+                                        <li><a href="./signup.html">Sign Up</a></li>
+                                        <li><a href="./login.html">Login</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                        <a href="./login.html"><span class="icon_profile"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Normal Breadcrumb Begin -->
+    <section class="normal-breadcrumb set-bg" data-setbg="img/Banner_login.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="normal__breadcrumb__text">
+                        <h2>Sign Up</h2>
+                        <p style="color:#000000;">Bienvenido!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Normal Breadcrumb End -->
+
+    <!-- Signup Section Begin -->
+    <section class="signup spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="login__form">
+                        <h3>Sign Up</h3>
+                    
+<!-- Vertical form outside panel -->
+<form role="form">
+    <div class="block">
+      <h6 class="heading-hr">Registrate ya!</h6>
+
+      <div class="form-group">
+        <label>id:</label>
+        <input type="text" class="form-control" id="clave" readonly />
+      </div>
+
+      <div class="form-group">
+        <label>Nombre:</label>
+        <input type="text" class="form-control" id="nombre" />
+      </div>
+
+      <div class="form-group">
+        <label>Correo:</label>
+        <input type="text" class="form-control" id="costo" />
+      </div>
+
+      <div class="form-group">
+        <label>Contraseña:</label>
+        <textarea
+          rows="1"
+          cols="1"
+          class="form-control"
+          id="descripcion"
+        ></textarea>
+      </div>
+
+      <div class="form-actions text-right">
+        <input
+          type="button"
+          value="Guardar"
+          class="btn btn-success"
+          id="guardar"
+        />
+
+        <input
+          type="button"
+          value="Modificar"
+          class="btn btn-warning"
+          id="modificar"
+        />
+        <input
+          type="button"
+          value="Limpiar BD"
+          class="btn btn-danger"
+          id="eliminar-todo"
+        />
+      </div>
+    </div>
+  </form>
+
+  <!-- Default table -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h6 class="panel-title">
+        <i class="icon-table2"></i> personas registradas
+      </h6>
+    </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Contraseña</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!--<tr>
+            <td>1</td>
+            <td>Chocolate</td>
+            <td>23</td>
+            <td>Sin azucar</td>
+
+            <td>
+              <a
+                href="#"
+                class="btn btn-default btn-icon btn-xs tip"
+                title="Edit entry"
+                ><i class="icon-pencil"></i
+              ></a>
+            </td>
+            <td>
+              <a
+                href="#"
+                class="btn btn-default btn-icon btn-xs tip"
+                title="Edit entry"
+                ><i class="icon-minus"></i
+              ></a>
+            </td>
+            </tr>-->
+        </tbody>
+      </table>
+    </div>
+    <div class="form-group">
+      <center id="siRegistros" />
+    </div>
+  </div>
+  <!-- /default table -->
+  <!-- /vertical form outside panel -->
+
+                        <h5>Already have an account? <a href="#">Log In!</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="login__social__links">
+                        <h3>Login With:</h3>
+                        <ul>
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With Facebook</a>
+                            </li>
+                            <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Signup Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="page-up">
+            <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+        </div> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer__nav">
+                        <ul>
+                            <li class="active"><a href="./index.html">Homepage</a></li>
+                            <li><a href="./categories.html">Categories</a></li>
+                            <li><a href="./blog.html">Our Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- Footer Section End -->
+
+      <!-- Search model Begin -->
+      <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+<!-- API DEXIE PARA EL MANEJO DE LA BASE DE DATOS-->
+<script src="js/main2.js" type="module"></script>
+<script
+src="js/dexie.min.js"
+integrity="sha512-ZxOA8l07uAOW9hOwLustU8G5Pa9WGUplctjW6OSPYT9VZiS6PzEX7tJdZvUQLswakTUkACm5/rykzrDhds2TJQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+
+</body>
+
+</html>
