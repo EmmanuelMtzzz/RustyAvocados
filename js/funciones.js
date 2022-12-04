@@ -72,7 +72,6 @@ const ordenarCampos = producto=>{
     objProducto={
         id:producto.id,
         nombre:producto.nombre,
-        costo:producto.precio,
         descripcion:producto.descripcion
     }
     return objProducto;
