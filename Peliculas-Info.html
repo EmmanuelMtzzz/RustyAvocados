@@ -216,15 +216,74 @@
                             <div class="section-title">
                                 <h5>Tu comentario</h5>
                             </div>
-                            <form action="#">
-                                <textarea placeholder="Comentario"></textarea>
-                                <button type="submit"><i class="fa fa-location-arrow"></i> Reseña</button>
-                            </form>
+                            <div class="form-group">
+                                <label>Comentario:</label>
+                                <textarea
+                                  rows="1"
+                                  cols="1"
+                                  class="form-control"
+                                  id="descripcion"
+                                ></textarea>
+                              </div>
+                              <div class="form-actions text-right">
+                                <input
+                                  type="button"
+                                  value="Guardar"
+                                  class="btn btn-success"
+                                  id="guardar"
+                                />
                         </div>
                     </div>
                     
                 </div>
+                
             </div>
+             <!-- Default table -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <i class="icon-table2"></i> personas registradas
+                  </h6>
+                </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Comentario</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+                      <!--<tr>
+                        <td>1</td>
+                        <td>Chocolate</td>
+                        <td>23</td>
+                        <td>Sin azucar</td>
+            
+                        <td>
+                          <a
+                            href="#"
+                            class="btn btn-default btn-icon btn-xs tip"
+                            title="Edit entry"
+                            ><i class="icon-pencil"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="btn btn-default btn-icon btn-xs tip"
+                            title="Edit entry"
+                            ><i class="icon-minus"></i
+                          ></a>
+                        </td>
+                        </tr>-->
+                    </tbody>
+                  </table>
+                </div>
+                <div class="form-group">
+                  <center id="siRegistros" />
+                </div>
+              </div>
+               <!-- /default table -->
         </section>
         <!-- Anime Section End -->
 
