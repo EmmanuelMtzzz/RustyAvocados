@@ -133,7 +133,7 @@ function cargarTabla(){
     })
     })
 }else{
-    mesajeSinRegistros.textContent="No existen productos registrados";
+    mesajeSinRegistros.textContent="No existen comentarios registrados";
 }
 })
 
