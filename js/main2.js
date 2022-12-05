@@ -56,11 +56,48 @@ btGuardar.onclick=(evento)=>{
 
 
 //Evento click para guardar cambios
+btModificar.onclick=(evento)=>{
+    //Se recupera el id del producto a modificar
+    const id=parseInt(clave_prod.value||0);
+    if(id){
+       //si exiete el id se enviar los datos del formulario a la función guardar del archivo funciones.js
+        bd.productos.update(id,{
+            nombre:nombre_prod.value,
+            precio:costo_prod.value,
+            descripcion:desc_prod.value
+        }).then((resultado)=>{
+            if(resultado){
+               console.log("Modificación realizada");
+                nombre_prod.value="";
+                costo_prod.value=""
+                desc_prod.value="";
+                cargarTabla();
+                
+            }else{
+                console.log("No se aplicaron los cambios");
+        
+            }
+            
+        })
 
+        
+    }
+   
+    
+}
 
 
 //Evento click para  eliminar todo
-
+btEliminarTodo.onclick=()=>{
+    
+      //se ejecuta el borrado de toda la base de datos y se crea nuevamente pero vacia
+    
+       bd.delete();
+       bd=Registrobd("Registro", {productos:`++id,nombre, precio,descripcion`});
+       bd.open();
+       location.reload();
+      
+}
 
 //Encagado de consultar los productos y enviarlos al html
 function cargarTabla(){
